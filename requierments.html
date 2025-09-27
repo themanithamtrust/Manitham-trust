@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requirements - Manitham Trust</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background: #2b7a78;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .back-btn-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .back-btn {
+      background: #3aafa9;
+      border: none;
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+ }
+
+    .back-btn:hover {
+      background: #2b7a78;
+    }
+
+    .accordion {
+      max-width: 900px;
+      margin: 20px auto;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    .accordion-item {
+      border-bottom: 1px solid #ccc;
+    }
+
+    .accordion-header {
+      background: #3aafa9;
+      color: white;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .accordion-header:hover {
+      background: #2b7a78;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 20px;
+      background: white;
+    }
+
+    .accordion-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+    }
+
+    .accordion-content table, 
+    .accordion-content th, 
+    .accordion-content td {
+      border: 1px solid #ccc;
+    }
+
+    .accordion-content th, 
+    .accordion-content td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    .accordion-content th {
+      background: #f1f1f1;
+    }
+
+    .accordion-content p {
+      font-size: 16px;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Our Current Requirements</header>
+
+  <div class="back-btn-container">
+    <button class="back-btn" onclick="location.href='index.html'">← Back to Dashboard</button>
+  </div>
+
+  <div class="accordion">
+
+    <!-- Food Section -->
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        Food <span>▼</span>
+      </div>
+      <div class="accordion-content">
+        <table>
+          <tr><th>Item (English / Tamil)</th><th>Quantity</th></tr>
+          <tr><td>Black gram / துவரம் பருப்பு</td><td>30 kg</td></tr>
+          <tr><td>Turmeric powder / மஞ்சள் தூள்</td><td>1 kg</td></tr>
+          <tr><td>Oil / எண்ணெய்</td><td>35 lt</td></tr>
+          <tr><td>Red chilli / வரமிளகாய்</td><td>5 kg</td></tr>
+          <tr><td>Ghee / நெய்</td><td>1 lt</td></tr>
+          <tr><td>Roasted chickpeas / பொட்டு கடலை</td><td>15 kg</td></tr>
+          <tr><td>Rava / ரவை</td><td>15 kg</td></tr>
+          <tr><td>Vermicelli / சேமியா</td><td>95 packets or 4 big bags</td></tr>
+          <tr><td>Sugar / சக்கரை</td><td>45 kg</td></tr>
+          <tr><td>Gram flour / உளுந்து பருப்பு</td><td>31 kg</td></tr>
+          <tr><td>Tamarind / புளி</td><td>6 kg</td></tr>
+          <tr><td>Garlic / பூண்டு</td><td>5 kg</td></tr>
+          <tr><td>Toor dal / கடலை பருப்பு</td><td>10 kg</td></tr>
+          <tr><td>Green gram / பாசிப்பருப்பு</td><td>20 kg</td></tr>
+          <tr><td>Tea powder / டீ தூள்</td><td>5 kg</td></tr>
+          <tr><td>Coffee powder / காபி தூள்</td><td>3 kg</td></tr>
+          <tr><td>Elachi / ஏலக்காய்</td><td>250 g</td></tr>
+          <tr><td>Mustard / கடுகு</td><td>2 kg</td></tr>
+          <tr><td>Cumin / சீரகம்</td><td>1 kg</td></tr>
+          <tr><td>Pepper / மிளகு</td><td>1 kg</td></tr>
+          <tr><td>Coriander / மல்லி</td><td>3 kg</td></tr>
+<tr><td>Asafoetida / பெருங்காயம்</td><td>10 kg</td></tr>
+          <tr><td>Pappad / அப்பளம்</td><td>25 packets</td></tr>
+          <tr><td>Sambar powder / சாம்பார் தூள்</td><td>3 kg</td></tr>
+          <tr><td>Crystal salt / கல் உப்பு</td><td>20 kg</td></tr>
+          <tr><td>Salt / உப்பு</td><td>20 kg</td></tr>
+          <tr><td>Idli rice / இட்லி அரிசி</td><td>2 bags (52 kg each)</td></tr>
+          <tr><td>Rice / சாப்பாடு அரிசி</td><td>2 சிப்பம்</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Toiletry Section -->
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        Toiletry <span>▼</span>
+      </div>
+      <div class="accordion-content">
+        <table>
+          <tr><th>Item</th><th>Quantity</th></tr>
+          <tr><td>Napkin</td><td>50 packs</td></tr>
+          <tr><td>Harpic</td><td>10 bottles</td></tr>
+          <tr><td>Soap</td><td>40</td></tr>
+          <tr><td>Mask</td><td>10 packs</td></tr>
+          <tr><td>Lizol</td><td>10 bottles</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Essentials Section -->
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        Essentials <span>▼</span>
+      </div>
+      <div class="accordion-content">
+        <table>
+          <tr><th>Item</th><th>Quantity</th></tr>
+          <tr><td>Cot</td><td>Contact Trust</td></tr>
+          <tr><td>Bed</td><td>Contact Trust</td></tr>
+          <tr><td>Pillow</td><td>Contact Trust</td></tr>
+          <tr><td>Bedsheet</td><td>Contact Trust</td></tr>
+          <tr><td>Mop</td><td>Contact Trust</td></tr>
+          <tr><td>Cup</td><td>Contact Trust</td></tr>
+          <tr><td>Bucket</td><td>Contact Trust</td></tr>
+          <tr><td>Brush</td><td>Contact Trust</td></tr>
+          <tr><td>Paste</td><td>Contact Trust</td></tr>
+          <tr><td>Stationary for children</td><td>Contact Trust</td></tr>
+          <tr><td>Clothes</td><td>Contact Trust</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Blood Donation Section -->
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        Blood Donation <span>▼</span>
+      </div>
+      <div class="accordion-content">
+        <p>We encourage everyone to donate blood.  
+        Please contact the trust for blood donation schedule.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleAccordion(element) {
+      const content = element.nextElementSibling;
+      const allContents = document.querySelectorAll(".accordion-content");
+      const allHeaders = document.querySelectorAll(".accordion-header span");
+
+      // Close all sections
+      allContents.forEach(c => c.style.display = "none");
+      allHeaders.forEach(s => s.textContent = "▼");
+
+      // Open selected
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        element.querySelector("span").textContent = "▼";
+      } else {
+        content.style.display = "block";
+        element.querySelector("span").textContent = "▲";
+      }
+    }
+  </script>
+
+</body>
+</html>
