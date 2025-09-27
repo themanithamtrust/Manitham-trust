@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manitham Trust</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("https://wallpaperaccess.com/full/2719978.jpg"); /* <-- Replace with your image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      text-align: center;
+      color: #222;
+    }
+
+    header {
+      background: rgba(43,122,120,0.85);
+      color: white;
+      padding: 30px 20px;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    nav button {
+      background: #3aafa9;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav button:hover {
+      background: #2b7a78;
+    }
+
+    section {
+      display: none;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.85);
+      margin: 20px auto;
+      width: 80%;
+      border-radius: 8px;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 10px;
+      background: rgba(222,242,241,0.9);
+      color: #333;
+    }
+
+    img {
+      width: 100px;
+      height: auto;
+      margin-left: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://manithamtrust.org/images/logonew.jpg" height=100,width=200><br>
+	<br><br>
+    <div>MANITHAM TRUST – "Save Humanity , Create an immaculate society"</div><br><br>
+  </header>
+
+  <nav>
+    <button onclick="location.href='home14.html'">Home</button>
+    <button onclick="location.href='requierments.html'">Requirements</button>
+    <button onclick="location.href='donors.html'">Donors</button>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home" class="active">
+    <h2>Welcome to Manitham Trust</h2>
+    <p>We are a non-profit organization dedicated to uplifting underprivileged communities
+       through education, healthcare, and social welfare.</p>
+    <p>Join us in making a difference!</p>
+  </section>
+
+  <section id="requirements">
+    <h2>Our Current Requirements</h2>
+      <b>Donating page</b><br><br>
+            <label>Materialistic Donation:</label>
+            <select id="animalType">
+              <option></option>
+              <option>Groceries</option>
+              <option>Food</option>
+              <option>Dress</option>
+              <option>Bed</option>
+			  <option>pillow</option>
+			  <option>napkins</option>
+			  <option>Toiletry</option>
+            </select><br><br>
+  </section>
+
+  <section id="donors">
+    <h2>Our Donors</h2>
+			 <label>Details:</label><br>
+            <textarea id="Donor Details" rows="3" cols="25"></textarea><br><br><button onclick="Donating(${e.latlng.lat}, ${e.latlng.lng})">Save</button>
+             <br>
+    <p>We sincerely thank all our donors who make our work possible.</p>
+  </section>
+
+  <footer>
+	<div class="col-xs-12 col-sm-4">
+                        <h3>Our office <i></i></h3>
+                        <div class="footer-contact-info">
+                            <ul class="fa-ul">
+                                <i class="fa fa-li fa-map-marker"></i>Head Office Address<br> 
+No 14, Rajarathinam Pilla		i Street, (Opp Aruna Theater) Woriyur, Tiruchirappalli - 620003.<br>
+                                <i class="fa fa-li fa-phone"></i>+91 9080808068 / +91 9688332216<br>
+                                <i class="fa fa-li fa-envelope"></i>manithamorganization@yahoo.com / manithamtrust2018@gmail.com<br>
+                                <i class="fa fa-li fa-mobile"></i>0431 – 4000242<br>
+                                <i class="fa fa-li fa-clock-o"></i>Mon-Sat: 9:00 - 09:00</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col-xs-12 copyright text-center padding-top-50 padding-bottom-20">
+                       <a href="https://themanithamtrust@gmail.com/"> <manitham>CopyRight©️ 2020 Manithan trust, All rights reserved by themanithamtrust</span></a>
+                    </div>
+                </div>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll("section").forEach(sec =>
+        sec.classList.remove("active")
+      );
+      document.getElementById(id).classList.add("active");
+    }
+  </script>
+</body>
+</html>
